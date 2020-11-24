@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a95e8ace-ffce-4389-a9f0-3bdadf31b13d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/SubjectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/sql/SQLQueries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate-configuration-3.0.dtd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/converter/GenderConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/converter/GenderConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/dao/InstituteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/InstituteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/dao/MajorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/MajorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/dao/TeamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/TeamDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/entity/Institute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/entity/Institute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/entity/Major.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/entity/Major.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/one/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/entity/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/DemoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/DemoMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Allocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Allocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/AllocationId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/AllocationId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/ClassRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/ClassRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/GradeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/GradeId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Institute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Institute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Major.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Major.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Salary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/SalaryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/SalaryId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/ScheduleId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/ScheduleId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/SubjectType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/two/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/two/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/util/EMBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/util/HiberUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zoobie/spring/lab/one/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zoobie/spring/lab/first/one/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zoobie/spring/lab/first/one/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/zoobie/spring/lab/first/one/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zoobie/spring/lab/first/one/Tests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +166,7 @@
       <workItem from="1605997204407" duration="1209000" />
       <workItem from="1606048787241" duration="2395000" />
       <workItem from="1606152008377" duration="9003000" />
-      <workItem from="1606210469366" duration="7659000" />
+      <workItem from="1606210469366" duration="8040000" />
     </task>
     <servers />
   </component>

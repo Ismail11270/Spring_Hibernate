@@ -24,16 +24,15 @@ public class Tests {
 	@Autowired
 	TeamDao teamDao;
 
-	
 	@Test
 	public void contextLoads() {
 	}
 
 	@Test
 	public void testEmployeeDao(){
-		String name = "Ismoil Atajanov";
-		Integer teamId = 1;
-		String teamName = "SOFTWARE";
+		final String name = "Ismoil Atajanov";
+		final Integer teamId = 1;
+		final String teamName = "SOFTWARE";
 
 		var startCount = employeesDao.getAll().size();
 		var startSoftwareTeamCount = employeesDao.getEmployeesFromTeam( teamName ).size();
@@ -48,15 +47,22 @@ public class Tests {
 		Assert.assertEquals( startCount+1, employeesDao.getAll().size() );
 		Assert.assertEquals( startSoftwareTeamCount+1, employeesDao.getEmployeesFromTeam( teamName ).size() );
 
-		var newEmp = employeesDao.getByName( name ).get(0);
-		Assert.assertEquals( originalEmp.getName(), newEmp.getName() );
-		Assert.assertEquals( originalEmp.getGender(), newEmp.getGender() );
-		Assert.assertEquals( originalEmp.getTeamId(), newEmp.getTeamId() );
-		Assert.assertEquals( originalEmp.getDate(), newEmp.getDate() );
+		var empByName = employeesDao.getByName( name ).get(0);
+		assertEqualsEmployee( originalEmp, empByName );
 
-		Assert.assertEquals( 1, employeesDao.deleteById( newEmp.getId() ) );
+		var empById = employeesDao.getById( empByName.getId() );
+		assertEqualsEmployee( empByName, empById );
+
+		Assert.assertEquals( 1, employeesDao.deleteById( empByName.getId() ) );
 
 		int endCount = employeesDao.getCount();
 		Assert.assertEquals( startCount, endCount );
+	}
+
+	private void assertEqualsEmployee( Employee expected, Employee actual){
+		Assert.assertEquals( expected.getName(), actual.getName() );
+		Assert.assertEquals( expected.getGender(), actual.getGender() );
+		Assert.assertEquals( expected.getTeamId(), actual.getTeamId() );
+		Assert.assertEquals( expected.getDate(), actual.getDate() );
 	}
 }

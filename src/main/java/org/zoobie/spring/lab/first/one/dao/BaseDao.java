@@ -12,7 +12,7 @@ public abstract class BaseDao<T> extends JdbcDaoSupport{
         return getJdbcTemplate().query( SQLQueries.SELECT_ALL( getTableName() ), getRowMapper());
     }
 
-    public T getEmployeeById(int id){
+    public T getById(int id){
         return getJdbcTemplate( ).queryForObject( SQLQueries.SELECT_WHERE( getTableName(), getIdColumn(), id ), getRowMapper());
     }
 
