@@ -1,6 +1,6 @@
 package org.zoobie.spring.lab.converter;
 
-import org.zoobie.spring.lab.first.two.model.Gender;
+import org.zoobie.spring.lab.jpa.model.Gender;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
