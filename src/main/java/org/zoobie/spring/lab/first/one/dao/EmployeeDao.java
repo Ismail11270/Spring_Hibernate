@@ -1,21 +1,14 @@
 package org.zoobie.spring.lab.first.one.dao;
 
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.StatementCallback;
-import org.springframework.jdbc.core.support.JdbcDaoSupport;
-import org.springframework.stereotype.Component;
 import org.zoobie.spring.lab.first.one.entity.Employee;
-import org.zoobie.spring.lab.first.one.entity.Team;
 import org.zoobie.spring.lab.sql.SQLQueries;
 
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
 
 public class EmployeeDao extends BaseDao<Employee> {
 
-    private static final RowMapper<Employee> employeeMapper = ( ( resultSet, i ) -> {
+    static final RowMapper<Employee> employeeMapper = ( ( resultSet, i ) -> {
         var id = resultSet.getInt( 1 );
         var gender = resultSet.getString( 2 );
         var date = resultSet.getDate( 3 );

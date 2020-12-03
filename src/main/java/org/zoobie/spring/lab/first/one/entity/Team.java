@@ -10,7 +10,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Team {
 	public static final String TABLE_NAME = "TEAMS";
-	private int id;
+    public static final String COLUMN_ID = "TEAM_ID";
+    private int id;
 	private String name;
 	private int managerId;
 	private int instituteId;

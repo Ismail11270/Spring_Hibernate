@@ -14,7 +14,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Table(name = "INSTITUTES", uniqueConstraints = {
-        @UniqueConstraint(columnNames = "INSTITUTE_NAME", name="UK_INSTITUTE_NAME")
+        @UniqueConstraint(columnNames = "INSTITUTE_NAME", name = "UK_INSTITUTE_NAME")
 })
 public class Institute implements Serializable {
     @Id
@@ -26,7 +26,7 @@ public class Institute implements Serializable {
     private String instituteName;
 
     @OneToMany(mappedBy = "institute")
-            @Cascade( org.hibernate.annotations.CascadeType.SAVE_UPDATE )
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private Set<Major> majors = new HashSet<>( );
 
 }

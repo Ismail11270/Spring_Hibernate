@@ -8,14 +8,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.jta.JtaTransactionManager;
 import org.zoobie.spring.lab.first.one.dao.EmployeeDao;
 import org.zoobie.spring.lab.first.one.dao.InstituteDao;
 import org.zoobie.spring.lab.first.one.dao.MajorDao;
 import org.zoobie.spring.lab.first.one.dao.TeamDao;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.sql.DataSource;
 
 @SpringBootApplication
@@ -56,7 +53,7 @@ public class DemoApplication {
 	@Bean
 	public DataSource dataSource() {
 		MysqlDataSource	 ds = new MysqlDataSource();
-		ds.setUrl("jdbc:mysql://127.0.0.1:6033/spring");
+		ds.setUrl("jdbc:mysql://127.0.0.1:6033/uni");
 		ds.setUser("root");
 		ds.setPassword("");
 		return ds;
@@ -65,7 +62,8 @@ public class DemoApplication {
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
 		HibernateJpaVendorAdapter jva = new HibernateJpaVendorAdapter();
-		jva.setShowSql(true); jva.setGenerateDdl(true);
+		jva.setShowSql(true);
+		jva.setGenerateDdl(true);
 		jva.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
 		return jva;
 	}
@@ -74,12 +72,13 @@ public class DemoApplication {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory( DataSource dataSource,
 																		JpaVendorAdapter jpaVendorAdapter) {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
-		emf.setPackagesToScan("com.example.demo.entity");
+		emf.setPackagesToScan("org.zoobie.spring.lab.first.one");
 		emf.setPersistenceUnitName("unit");
 		emf.setDataSource(dataSource);
+//		emf.getJpaPropertyMap().put("hibernate.hbm2ddl.auto","create");
+
 		emf.setJpaVendorAdapter(jpaVendorAdapter);
 		return emf;
 	}
-
 
 }

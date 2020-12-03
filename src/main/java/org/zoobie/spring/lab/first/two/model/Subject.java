@@ -17,7 +17,7 @@ public class Subject {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="SUBJECT_NAME",length = 50,nullable = false)
+    @Column(name="SUBJECT_NAME",length = 40,nullable = false)
     private String subjectName;
 
     @ManyToOne

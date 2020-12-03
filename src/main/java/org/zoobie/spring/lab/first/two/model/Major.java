@@ -22,11 +22,11 @@ public class Major implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="MAJOR_NAME", length = 70, nullable = false)
+    @Column(name="MAJOR_NAME", length = 60, nullable = false)
     private String majorName;
 
-    @ManyToOne
-    @JoinColumn(name="INSTITUTE_ID", foreignKey = @ForeignKey(name = "FK_MAJOR_INST_ID"))
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="INSTITUTE_ID", foreignKey = @ForeignKey(name = "FK_MAJOR_INSTITUTE_ID"))
     @Cascade( org.hibernate.annotations.CascadeType.SAVE_UPDATE )
     private Institute institute;
 

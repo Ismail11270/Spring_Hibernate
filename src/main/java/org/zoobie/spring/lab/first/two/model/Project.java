@@ -29,7 +29,7 @@ public class Project implements Serializable {
     private Date endDate;
 
     @ManyToOne
-    @JoinColumn(name = "MANAGER_ID", foreignKey = @ForeignKey(name = "FK_PROJECTS_EMPLOYEE_ID"))
+    @JoinColumn(name = "MANAGER_ID", foreignKey = @ForeignKey(name = "FK_PROJECT_EMPLOYEE_ID"))
     @Cascade( org.hibernate.annotations.CascadeType.SAVE_UPDATE )
     private Employee manager;
 
