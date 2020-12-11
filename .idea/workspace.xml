@@ -121,17 +121,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcDaoTests">
+  <component name="RunManager" selected="JUnit.JdbcDaoTests and 1 more">
+    <configuration name="JdbcDaoTests and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-1" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="pl.polsl.ismoil.atajanov.lab.jdbc.JdbcDaoTests" />
+        <pattern testClass="pl.polsl.ismoil.atajanov.lab.jpa.TestJpa" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcDaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zoobie.spring.lab.jdbc.*" />
+          <option name="PATTERN" value="pl.polsl.ismoil.atajanov.lab.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zoobie.spring.lab.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="org.zoobie.spring.lab.jdbc.JdbcDaoTests" />
+      <option name="PACKAGE_NAME" value="pl.polsl.ismoil.atajanov.lab.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="pl.polsl.ismoil.atajanov.lab.jdbc.JdbcDaoTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,12 +152,12 @@
       <module name="spring-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zoobie.spring.lab.jdbc.*" />
+          <option name="PATTERN" value="pl.polsl.ismoil.atajanov.lab.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zoobie.spring.lab.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="org.zoobie.spring.lab.jdbc.JdbcDaoTests" />
+      <option name="PACKAGE_NAME" value="pl.polsl.ismoil.atajanov.lab.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="pl.polsl.ismoil.atajanov.lab.jdbc.JdbcDaoTests" />
       <option name="METHOD_NAME" value="testEmployeeDao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -157,12 +168,12 @@
       <module name="spring-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zoobie.spring.lab.jpa.*" />
+          <option name="PATTERN" value="pl.polsl.ismoil.atajanov.lab.jpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zoobie.spring.lab.jpa" />
-      <option name="MAIN_CLASS_NAME" value="org.zoobie.spring.lab.jpa.TestJpa" />
+      <option name="PACKAGE_NAME" value="pl.polsl.ismoil.atajanov.lab.jpa" />
+      <option name="MAIN_CLASS_NAME" value="pl.polsl.ismoil.atajanov.lab.jpa.TestJpa" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,29 +183,13 @@
       <module name="spring-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zoobie.spring.lab.jpa.*" />
+          <option name="PATTERN" value="pl.polsl.ismoil.atajanov.lab.jpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zoobie.spring.lab.jpa" />
-      <option name="MAIN_CLASS_NAME" value="org.zoobie.spring.lab.jpa.TestJpa" />
+      <option name="PACKAGE_NAME" value="pl.polsl.ismoil.atajanov.lab.jpa" />
+      <option name="MAIN_CLASS_NAME" value="pl.polsl.ismoil.atajanov.lab.jpa.TestJpa" />
       <option name="METHOD_NAME" value="testInstitute" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestJpa.testMajor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.zoobie.spring.lab.jpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.zoobie.spring.lab.jpa" />
-      <option name="MAIN_CLASS_NAME" value="org.zoobie.spring.lab.jpa.TestJpa" />
-      <option name="METHOD_NAME" value="testMajor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcDaoTests and 1 more" />
         <item itemvalue="JUnit.JdbcDaoTests" />
         <item itemvalue="JUnit.JdbcDaoTests.testEmployeeDao" />
         <item itemvalue="JUnit.TestJpa" />
         <item itemvalue="JUnit.TestJpa.testInstitute" />
-        <item itemvalue="JUnit.TestJpa.testMajor" />
       </list>
     </recent_temporary>
   </component>
