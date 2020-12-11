@@ -1,7 +1,7 @@
 package org.zoobie.spring.lab.jdbc.dao;
 
-import org.springframework.jdbc.core.RowMapper;
 import org.zoobie.spring.lab.jdbc.entity.Institute;
+import org.springframework.jdbc.core.RowMapper;
 import org.zoobie.spring.lab.jdbc.sql.SQLQueries;
 
 import java.util.List;

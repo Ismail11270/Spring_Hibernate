@@ -21,9 +21,8 @@ public class Team {
     @Column(name = "TEAM_NAME", length = 50, nullable = false)
     private String teamName;
 
-    @ManyToOne
-    @JoinColumn(name="MANAGER_ID", foreignKey = @ForeignKey(name = "FK_TEAM_MANAGER_ID"))
-    private Employee manager;
+    @Column(name="MANAGER_ID")
+    private Integer managerId;
 
     @ManyToOne
     @JoinColumn(name="INSTITUTE_ID", foreignKey = @ForeignKey(name = "FK_TEAM_INST_ID"))

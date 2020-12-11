@@ -1,11 +1,5 @@
 package org.zoobie.spring.lab.jdbc;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.zoobie.spring.lab.DemoApplication;
 import org.zoobie.spring.lab.jdbc.dao.EmployeeDao;
 import org.zoobie.spring.lab.jdbc.dao.InstituteDao;
@@ -15,6 +9,12 @@ import org.zoobie.spring.lab.jdbc.entity.Employee;
 import org.zoobie.spring.lab.jdbc.entity.Institute;
 import org.zoobie.spring.lab.jdbc.entity.Major;
 import org.zoobie.spring.lab.jdbc.entity.Team;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.Date;
 import java.time.LocalDate;

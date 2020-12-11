@@ -3,7 +3,7 @@ package org.zoobie.spring.lab.jpa.model;
 import java.util.Arrays;
 
 public enum Gender {
-    MALE('M'), FEMALE('F'), OTHER('O'), TRANSITIONING('T'), RAFAT('N');
+    MALE('M'), FEMALE('F'), OTHER('O');
 
     private char gender;
 

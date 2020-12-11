@@ -2,17 +2,19 @@ package org.zoobie.spring.lab;
 
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import org.zoobie.spring.lab.jdbc.dao.EmployeeDao;
+import org.zoobie.spring.lab.jdbc.dao.InstituteDao;
+import org.zoobie.spring.lab.jdbc.dao.MajorDao;
+import org.zoobie.spring.lab.jdbc.dao.TeamDao;
+import org.zoobie.spring.lab.jpa.dao.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.zoobie.spring.lab.jdbc.dao.EmployeeDao;
-import org.zoobie.spring.lab.jdbc.dao.InstituteDao;
-import org.zoobie.spring.lab.jdbc.dao.MajorDao;
-import org.zoobie.spring.lab.jdbc.dao.TeamDao;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @SpringBootApplication
@@ -48,6 +50,41 @@ public class DemoApplication {
 		TeamDao dao = new TeamDao();
 		dao.setDataSource( ds );
 		return dao;
+	}
+
+	@Bean
+	public StudentJpaDao studentJpaDao( EntityManagerFactory emf ) {
+		StudentJpaDao studentJpaDao = new StudentJpaDao();
+		studentJpaDao.setEmf( emf );
+		return studentJpaDao;
+	}
+
+	@Bean
+	public SubjectJpaDao subjectJpaDao( EntityManagerFactory emf ) {
+		SubjectJpaDao subjectJpaDao = new SubjectJpaDao();
+		subjectJpaDao.setEmf( emf );
+		return subjectJpaDao;
+	}
+
+	@Bean
+	public SubjectTypeJpaDao subjectTypeJpaDao( EntityManagerFactory emf ) {
+		SubjectTypeJpaDao subjectTypeJpaDao = new SubjectTypeJpaDao();
+		subjectTypeJpaDao.setEmf( emf );
+		return subjectTypeJpaDao;
+	}
+
+	@Bean
+	public MajorJpaDao majorJpaDao( EntityManagerFactory emf ) {
+		MajorJpaDao majorJpaDao = new MajorJpaDao();
+		majorJpaDao.setEmf( emf );
+		return majorJpaDao;
+	}
+
+	@Bean
+	public InstituteJpaDao instituteJpaDao( EntityManagerFactory emf ){
+		InstituteJpaDao instituteJpaDao = new InstituteJpaDao();
+		instituteJpaDao.setEmf( emf );
+		return instituteJpaDao;
 	}
 
 	@Bean

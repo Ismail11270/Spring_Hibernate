@@ -6,12 +6,13 @@ import lombok.Setter;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Getter
 @Setter
 @Table(name = "SUBJECTS")
-public class Subject {
+public class Subject implements Serializable {
     @Id
     @Column(name="SUBJECT_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

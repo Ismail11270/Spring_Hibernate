@@ -1,19 +1,22 @@
 package org.zoobie.spring.lab.jpa.model;
 
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
 import org.zoobie.spring.lab.converter.GenderConverter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Getter
 @Setter
+@EqualsAndHashCode
 @Table(name = "STUDENTS")
-public class Student {
+public class Student implements Serializable {
     @Id
     @Column(name = "STUDENT_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
